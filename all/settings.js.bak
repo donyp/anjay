@@ -1,0 +1,31 @@
+require("./module")
+
+global.owner = "6283842155959" //PAKE NO LU BIAR BISA ADD AKSES
+global.namabot = "𝙳 𝙴 𝙽 𝚉" //NAMA BOT GANTI
+global.namaCreator = "𝙳 𝙴 𝙽 𝚉" //NAMA CREATOR GANTI AJA
+global.autoJoin = false //NOT CHANGE / JANGAN GANTI
+global.antilink = false //NOT CHANGE / JANGAN GANTI
+global.versisc = '3.0.0' //NOT CHANGE / JANGAN GANTI
+global.codeInvite = "CswK4kvQD1u7SfSmsYfMHZ"
+global.domain = 'https://selz-4youlovesenaa.pannelkuu.biz.id' //ISI DOMAIN PANEL MU
+global.apikey = 'ptla_BIaMgnvQd5JTtPtiMIBSVIjvsv6qKWjZzk3d2aPUsfi' //ISI APIKEY PLTA MU KALO G TAU CHAT GW 083872605023
+global.capikey = 'ptlc_vHpvX8brw3bZAGuBl1gFHiwL19mOWcDWJbS4qxVH6qG' //ISI APIKEY PLTC MU KALO G TAU CHAT GW 083872605023
+global.eggsnya = '15' //PAKE ID EGGS MU KALO GA TAU DEFAULT AJA
+global.location = '1' //JANGAN DIGANTI KALO G MAU EROR
+global.imageurl = 'https://telegra.ph/file/8651b65ab109bdb60a3d3.jpg' //GANTI PP MU MENGGUNAKAN LINK TELEGRA PH
+global.isLink = 'https://chat.whatsapp.com/Gar5xJK1grlE8Kp6Iv66PQ' ///GANTI MENGGUNAKAN LINK GRUBMU YA
+global.thumb = fs.readFileSync("./thumb.png") ///NOT CHANGE / JANGAN GANTI
+global.audionya = fs.readFileSync("./all/sound.mp3") //NOT CHANGE / JANGAN GANTI
+global.tekspushkon = "" //NOT CHANGE / JANGAN GANTI
+global.tekspushkonv2 = "" //NOT CHANGE / JANGAN GANTI
+global.packname = "" //GANTI AJ
+global.author = "LazZ" //GANTI SERAH MU
+global.jumlah = "5" ////NOT CHANGE / JANGAN GANTI
+
+let file = require.resolve(__filename)
+fs.watchFile(file, () => {
+	fs.unwatchFile(file)
+	console.log(chalk.redBright(`Update ${__filename}`))
+	delete require.cache[file]
+	require(file)
+})
